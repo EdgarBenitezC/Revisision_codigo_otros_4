@@ -1,3 +1,7 @@
+// primero se importo scanner de java util
+//s.nextLine(); se debe usar el 2 para el jugador 2 para que tenga coherencia
+//se usan equal en vez de == para comparar
+//se añaden los break necesarios y se verifican llaves de cierre
 import java.util.Scanner;
 
 public class ejercicio4 {
@@ -6,11 +10,11 @@ public class ejercicio4 {
         Scanner s = new Scanner(System.in);
         
         System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
-        String j1 = s.nextLine().toLowerCase();
+        String j1 = s.nextLine();
         
         System.out.print("Turno del jugador 2 (introduzca piedra, papel o tijeras): ");
         Scanner s2 = new Scanner(System.in);
-        String j2 = s2.nextLine().toLowerCase();
+        String j2 = s2.nextLine();
         
         if (j1.equals(j2)) {
             System.out.println("Empate");
